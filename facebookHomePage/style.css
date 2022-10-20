@@ -1,0 +1,112 @@
+#root {
+    display:flex;
+   /*  grid-template-areas: 
+    "header header"
+    "form form"
+    "BottomText BottomText"; */
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+}
+
+body {
+    background: whitesmoke;
+    font-family: 'Inter', sans-serif;
+}
+
+.header h1 {
+    font-size:3.5rem;
+    color:#1877F2;
+    line-height: 80%;
+    margin-bottom:0px;
+}
+
+.header p{
+    font-size:1.5rem;
+}
+
+.header{
+    grid-area: header;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    word-wrap: break-word;
+    overflow: auto;
+    
+}
+
+form{
+    background:white;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    grid-area: form;
+    display:flex;
+    flex-direction: column;
+    padding:1rem;
+    margin:0rem 9rem 0rem 9rem;
+    gap: 10px;
+    box-shadow: 2px 2px 12px 2px rgb(228, 220, 220);
+}
+
+.same {
+    
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding:18px;
+}
+
+.logIn {
+    min-height: 50px;
+    background:#1877F2;
+    color:white;
+    font-size:1.1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight:bold;
+}
+
+.forgot{ 
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 0px;
+    color:rgb(39, 112, 249);
+}
+
+.createAcc{
+    margin:auto;
+    min-width: 150px;
+    max-height:50px;
+    background:rgb(2, 177, 16);
+    color:white;
+    font-size:1.1rem;
+    margin-bottom: 10px;
+    font-weight:bold;
+    padding-bottom: 40px;
+}
+
+.line{
+    border: .5px solid rgb(207, 207, 207);
+    margin-top:9px;
+}
+
+.BottomText {
+    margin-top:25px;
+    font-size: 12px;
+}
+
+.BottomText a{
+    
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.BottomText p{
+    /* display:inline-flex;
+    margin-block-start:0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+    padding-left: 3px;
+}

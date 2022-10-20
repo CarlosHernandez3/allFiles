@@ -1,0 +1,11 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.6.0
+  - chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
+compiler:
+  solc:
+    remappings:
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.6.0'
+      - '@chainlink=@smartcontractkit/chainlink@1.1.0'
+wallets:
+  from_key: ${PRIVATE_KEY}
+  from_mnemonic: ${MNEMONIC}
